@@ -2,7 +2,7 @@ package Assignment1;
 
 public class StarPrint {
     public static int rows=4;
-    public static void main(String args[]){
+    public static void main(String[] args){
         StringBuilder reverser =new StringBuilder();
         System.out.print(Star());
         reverser.append(Star());

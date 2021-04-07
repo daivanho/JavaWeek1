@@ -8,11 +8,11 @@ public class Guesser<userGuess> {
     Random rand=new Random();
     private static int number= ThreadLocalRandom.current().nextInt(1,101);
 
-    public static void main(String args[]){
+    public static void main(String[] args){
         Scanner guess=new Scanner(System.in);
             System.out.println("Guess a Number 1-100:");
-            String userGuess="";
-            Boolean failed=true;
+            String userGuess;
+            boolean failed=true;
             int tries = 0;
             do {
                 userGuess=guess.nextLine();
