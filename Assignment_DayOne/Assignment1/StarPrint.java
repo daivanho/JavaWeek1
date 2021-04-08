@@ -12,28 +12,21 @@ public class StarPrint {
         reverser.append(Pyramid());
         System.out.println(reverser.reverse());
     }
-    public static String Star(){
-        String temp="";
+    public static StringBuilder Star(){
+        StringBuilder temp= new StringBuilder();
         for(int i=0;i<=rows;i++){
-            for(int x=0;x<i;x++) {
-                temp=temp+"*";
-            }
-            temp=temp+"\n";
+            temp.append("*".repeat(Math.max(0, i)));
+            temp.append("\n");
         }
         return temp;
     }
-    public static String Pyramid(){
-        String temp="";
+    public static StringBuilder Pyramid(){
+        StringBuilder temp= new StringBuilder();
         for (int i =0;i<rows;i++){
-            for(int x=0;x<rows-i;x++){
-                temp=temp+" ";
-            }
-            for(int x=0;x<(i+1)*2-1;x++) {
-                temp=temp+"*";
-            }for(int x=0;x<rows-i;x++){
-                temp=temp+" ";
-            }
-            temp=temp+"\n";
+            temp.append(" ".repeat(rows - i));
+            temp.append("*".repeat(Math.max(0, (i + 1) * 2 - 1)));
+            temp.append(" ".repeat(Math.max(0, rows - i)));
+            temp.append("\n");
         }
         return temp;
     }
