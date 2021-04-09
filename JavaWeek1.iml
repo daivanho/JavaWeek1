@@ -7,8 +7,10 @@
       <sourceFolder url="file://$MODULE_DIR$/Assignment_DayTwo" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Assignment_DayThree" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Assignment_DayFour" isTestSource="false" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" name="junit-4.12" level="project" />
   </component>
 </module>
